@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="632.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logintestapplicationMainPkg.CustomerDashboardController">
+   <children>
+      <MenuBar layoutY="7.0" prefHeight="25.0" prefWidth="620.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Buy Electricity">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionRenewable" text="Renewable Electricity" />
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionNonRenewable" text="Non-Renewable Electricity" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="PayBill">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#payBillMenuOnaction" text="PayBill" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Unpaid Amount">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionTransactionTable" text="Show  History" />
+                  <MenuItem mnemonicParsing="false" onAction="#pdfGenerationPurchaseMenubuttonOnclick" text="GeneratePDF" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Connections">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#newConncectionOnactionMenu" text="Apply For New Connection" />
+                  <MenuItem mnemonicParsing="false" onAction="#allConncectionOnactionMenu" text="View All connections" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Repair Service">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#repairRequestMenuOnAction" text="Request Repair" />
+                  <MenuItem mnemonicParsing="false" onAction="#showRepairHistoryMenuOnAction" text="Check Repair History" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Show Graphs and Charts">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionEnergyBarChart" text="Show energy BarChart" />
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionConnectionPieChart" text="Show Connection Charts" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="229.0" layoutY="284.0" prefHeight="65.0" prefWidth="449.0" text="Customer Dashboard" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

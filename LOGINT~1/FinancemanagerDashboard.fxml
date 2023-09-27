@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logintestapplicationMainPkg.FinancemanagerDashboardController">
+   <children>
+      <MenuBar layoutY="7.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Requests Approval">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onActionPurchaseRequests" text="Equipment Purchase Requests" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Payment History">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionPaymentHistory" text="Show Payment History Table" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Approval History">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionPurchaseRequests" text="View Approval History" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View Expense ">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionExpenseReport" text="Show Expense Report" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Income Statement">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#OnActionVIewIncomeStatement" text="View Income Statement" />
+              </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="171.0" layoutY="273.0" prefHeight="65.0" prefWidth="648.0" text="Finance Manager Dashboard" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+
+   </children>   
+</AnchorPane>
